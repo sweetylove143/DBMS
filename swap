@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE PROCEDURE SwapNumbers(IN num1 INT, IN num2 INT, OUT swapped_num1 INT, OUT swapped_num2 INT)
+BEGIN
+    -- Swap the numbers
+    SET swapped_num1 = num2;
+    SET swapped_num2 = num1;
+END$$
+
+DELIMITER ;
